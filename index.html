@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="isInViewport.js"></script>
     <script src="app.js"></script>
     <title>Tailwind Experiment</title>
 </head>
@@ -29,10 +30,11 @@
         </div>
 
         <div id="scroll-button" class="cursor-pointer bob absolute inset-x-0 bottom-0 w-full text-center text-6xl">
-            <svg class="fill-current text-indigo-600 inline-block h-32 w-32" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20">
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-            </svg>
+            <a href="#section2"><svg class="fill-current text-indigo-600 inline-block h-32 w-32"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+                </svg>
+            </a>
         </div>
     </section>
 
@@ -60,7 +62,7 @@
 
         <div class="flex m-20">
             <div class="w-1/6"></div>
-            <div class="w-5/6 flex justify-start items-center lefty">
+            <div class="w-5/6 flex justify-start items-center invisible lefty">
                 <img class="h-56 w-56 rounded-full mx-auto md:mx-0 md:mr-6" src="images/pic1.jpg">
                 <p class="text-white text-4xl" style="font-family: 'Permanent Marker', cursive;">The Ninja of the
                     group...</p>
@@ -69,7 +71,7 @@
 
 
         <div class="flex m-20">
-            <div class="w-5/6 flex justify-end items-center righty">
+            <div class="w-5/6 flex justify-end items-center invisible righty">
                 <p class="text-white text-4xl pr-4" style="font-family: 'Permanent Marker', cursive;">The smiley guy!
                 </p>
                 <img class="h-56 w-56 rounded-full" src="images/pic2.jpg">
@@ -80,7 +82,7 @@
 
         <div class="flex m-20">
             <div class="w-1/6"></div>
-            <div class="w-5/6 flex justify-start items-center lefty">
+            <div class="w-5/6 flex justify-start items-center invisible lefty">
                 <img class="h-56 w-56 rounded-full mx-auto md:mx-0 md:mr-6" src="images/pic3.jpg">
                 <p class="text-white text-4xl" style="font-family: 'Permanent Marker', cursive;">The dude who just hangs
                     out.</p>
