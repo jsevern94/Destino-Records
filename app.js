@@ -2,10 +2,12 @@ $(window).scroll(function () {
     if ($("#scroll-button").is(':in-viewport')) {
         $("#side-nav").removeClass("slide-in-blurred-top");
         $("#side-nav").addClass("slide-out-blurred-top");
+        $(".bio-text").removeClass("text-pop-up-top")
     } else {
         $("#side-nav").removeClass("slide-out-blurred-top");
         $("#side-nav").addClass("slide-in-blurred-top");
         $("#side-nav").removeClass("invisible");
+        $(".bio-text").addClass("text-pop-up-top")
     }
     $(".lefty").each(function (i, el) {
         var el = $(el);
@@ -28,4 +30,5 @@ $(window).scroll(function () {
             el.addClass("invisible")
         }
     });
+
 });
