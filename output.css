@@ -35521,20 +35521,24 @@ video {
   opacity: 0;
   -webkit-transition: margin 1s, opactiy 1s, -webkit-transform 1s, webkit-filter 1s;
           transition: margin 1s, opacity 1s, -webkit-transform 1s, filter 1s;
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(2) rotate(45deg);
+          transform: scale(2) rotate(45deg);
   -webkit-filter: blur(2px);
           filter: blur(2px);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 
 #side-nav:hover 
 .navbutton:not(:first-child) {
   margin: 10px auto 0;
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(1) rotate(0);
+          transform: scale(1) rotate(0);
   -webkit-filter: blur(0px);
           filter: blur(0px);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 
 .navbutton:not(:first-child):nth-child(2) {
