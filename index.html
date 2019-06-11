@@ -13,25 +13,55 @@
     <title>Tailwind Experiment</title>
 </head>
 
-<body class="bg-cover bg-center bg-fixed" style="background-image: url(background-image.jpg)">
+<body class="bg-cover bg-center bg-fixed" style="background-image: url(images/background-image.jpg)">
 
-    <section id="section1" class="relative bg-repeat bg-center h-screen w-screen flex justify-center"
-        style="background-image: url(brickwall/brickwall.png)">
+    <!-- overflow-hidden -->
 
-        <img class="w-50 h-50 absolute text-center rounded-full mt-20" src="logo.png" alt="Main Logo">
 
-        <p id="scroll-button" class="cursor-pointer absolute bottom-0 pb-20 w-full text-center text-6xl tracking-widest"
-            style="font-family: 'Permanent Marker', cursive;">Enter</p>
+    <section id="section1" class="relative h-screen w-screen flex justify-center">
+
+        <video autoplay loop muted src="images/video.mp4" class="object-cover z-0 "></video>
+
+        <div class="flex absolute mt-10 items-center justify-center">
+            <img class="w-1/4" src="images/Destino.png">
+            <img class="w-2/5 opacity-75" src="images/logo.v2.png" alt="Main Logo">
+            <img class="w-1/4" src="images/Records.png">
+        </div>
+
+        <div id="scroll-button" class="cursor-pointer bob absolute inset-x-0 bottom-0 w-full text-center text-6xl">
+            <svg class="fill-current text-indigo-600 inline-block h-32 w-32" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+            </svg>
+        </div>
     </section>
+
+
+    <nav id="side-nav" class="text-white text-3xl fixed ml-8 mt-4 top-0 z-20 w-64 h-screen invisible">
+
+        <a id="nav" href="#section2" class="navbutton block bg-gray-900 rounded-full text-center">Navigate</a>
+
+        <a href="#" class="navbutton block hover:line-through hover:text-purple-700 text-center">Artists</a>
+
+        <a href="#"
+            class="navbutton block hover:font-bold hover:line-through hover:text-purple-700 text-center">Tours</a>
+
+        <a href="#" class="navbutton block hover:font-bold hover:text-purple-700 text-center">Playlists</a>
+
+        <a href="#" class="navbutton block hover:font-bold hover:text-red-700 text-center">Social Media</a>
+
+        <a href="#" class="navbutton block hover:font-bold hover:text-red-700 text-center">Contact Us</a>
+
+    </nav>
 
 
     <section id="section2" class="mt-24">
 
 
         <div class="flex m-20">
-            <div class="w-1/2"></div>
-            <div class="w-1/2 flex justify-start items-center">
-                <img class="h-56 w-56 rounded-full mx-auto md:mx-0 md:mr-6" src="pic1.jpg">
+            <div class="w-1/6"></div>
+            <div class="w-5/6 flex justify-start items-center lefty">
+                <img class="h-56 w-56 rounded-full mx-auto md:mx-0 md:mr-6" src="images/pic1.jpg">
                 <p class="text-white text-4xl" style="font-family: 'Permanent Marker', cursive;">The Ninja of the
                     group...</p>
             </div>
@@ -39,20 +69,21 @@
 
 
         <div class="flex m-20">
-            <div class="w-1/2 flex justify-end items-center">
+            <div class="w-5/6 flex justify-end items-center righty">
                 <p class="text-white text-4xl pr-4" style="font-family: 'Permanent Marker', cursive;">The smiley guy!
                 </p>
-                <img class="h-56 w-56 rounded-full" src="pic2.jpg">
+                <img class="h-56 w-56 rounded-full" src="images/pic2.jpg">
             </div>
-            <div class="w-1/2"></div>
+            <div class="w-1/6"></div>
         </div>
 
 
         <div class="flex m-20">
-            <div class="w-1/2"></div>
-            <div class="w-1/2 flex justify-start items-center ">
-                <img class="h-56 w-56 rounded-full mx-auto md:mx-0 md:mr-6" src="pic3.jpg">
-                <p class="text-white text-4xl" style="font-family: 'Permanent Marker', cursive;">The dude who just hangs out.</p>
+            <div class="w-1/6"></div>
+            <div class="w-5/6 flex justify-start items-center lefty">
+                <img class="h-56 w-56 rounded-full mx-auto md:mx-0 md:mr-6" src="images/pic3.jpg">
+                <p class="text-white text-4xl" style="font-family: 'Permanent Marker', cursive;">The dude who just hangs
+                    out.</p>
             </div>
         </div>
 
