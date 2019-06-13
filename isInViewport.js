@@ -8,7 +8,7 @@ $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
 
 /**
  * @author  Mudit Ameta
- * @license https://github.com/zeusdeux/isInViewport/blob/master/license.md MIT
+ * @license https://github.com/zeusdeux/.                      isInViewport/blob/master/license.md MIT
  */
 
 // expose isInViewport as a custom pseudo-selector
