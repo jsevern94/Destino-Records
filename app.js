@@ -47,6 +47,7 @@ $(window).scroll(function () {
 
 $(function () {
     $(document).on("click","#side-nav a",function() {
+        $("#nav").removeClass("pulsate-fwd");
         $("#side-nav a").addClass("line-through").not(this).removeClass("line-through");
         $("#side-nav a").removeClass("hover:text-gray-700").not(this).addClass("hover:text-gray-700");
         $("#side-nav a").addClass("text-red-700").not(this).removeClass("text-red-700");
