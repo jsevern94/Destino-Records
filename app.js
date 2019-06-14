@@ -43,6 +43,39 @@ $(window).scroll(function () {
             el.addClass("invisible")
         }
     });
+
+    $(".spotify1").each(function (i, el) {
+        var el = $(el);
+        if (el.is(':in-viewport')) {
+            el.addClass("puff-in-center1");
+            el.removeClass("invisible")
+        } else {
+            el.removeClass("puff-in-center1")
+            el.addClass("invisible")
+        }
+    });
+
+    $(".spotify2").each(function (i, el) {
+        var el = $(el);
+        if (el.is(':in-viewport')) {
+            el.addClass("puff-in-center2");
+            el.removeClass("invisible")
+        } else {
+            el.removeClass("puff-in-center2")
+            el.addClass("invisible")
+        }
+    });
+
+    $(".spotify3").each(function (i, el) {
+        var el = $(el);
+        if (el.is(':in-viewport')) {
+            el.addClass("puff-in-center3");
+            el.removeClass("invisible")
+        } else {
+            el.removeClass("puff-in-center3")
+            el.addClass("invisible")
+        }
+    });
 });
 
 $(function () {
