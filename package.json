@@ -14,6 +14,6 @@
   },
   "dependencies": {
     "is-in-viewport": "^3.0.4",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
